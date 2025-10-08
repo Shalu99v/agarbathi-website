@@ -36,7 +36,7 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* 🌸 Floating incense packet images (Left + Right layout) */}
+      {/*  Floating incense packet images (Left + Right layout) */}
       {/* Left-side single image */}
       <div className="absolute top-30 bottom-10 left-10 z-20">
         <div className="w-40 h-40 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float1">
