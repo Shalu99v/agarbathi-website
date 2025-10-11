@@ -1,23 +1,26 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Smooth scroll handler
+  const handleScrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <nav
@@ -29,24 +32,39 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo / Brand */}
-        <Link href="#home" className="text-2xl font-bold">
-          3D Agarbathis
-        </Link>
+        <div
+          className="text-2xl font-bold cursor-pointer"
+          onClick={() => handleScrollTo("home")}
+        >
+          <img src="" alt="Logo" />
+        </div>
 
         {/* Menu */}
         <div className="space-x-6">
-          <Link href="#home" className="hover:text-green-600">
+          {/* <span
+            className="cursor-pointer hover:text-green-600"
+            onClick={() => handleScrollTo("home")}
+          >
             Home
-          </Link>
-          <Link href="#about" className="hover:text-green-600">
+          </span> */}
+          <span
+            className="cursor-pointer hover:text-green-600"
+            onClick={() => handleScrollTo("about")}
+          >
             About
-          </Link>
-          <Link href="#products" className="hover:text-green-600">
+          </span>
+          <span
+            className="cursor-pointer hover:text-green-600"
+            onClick={() => handleScrollTo("products")}
+          >
             Products
-          </Link>
-          <Link href="#contact" className="hover:text-green-600">
+          </span>
+          <span
+            className="cursor-pointer hover:text-green-600"
+            onClick={() => handleScrollTo("contact")}
+          >
             Contact
-          </Link>
+          </span>
         </div>
       </div>
     </nav>
