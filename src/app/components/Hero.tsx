@@ -77,7 +77,7 @@ export default function Hero() {
       </div>
 
       {/* ✨ Floating Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes float1 {
           0% {
             transform: translateY(0);
