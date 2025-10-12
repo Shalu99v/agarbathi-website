@@ -4,7 +4,7 @@ export const products = [
     description:
       "Calming aroma of pure sandalwood for peace, prayer, and meditation.",
     price: "120",
-    image: "/products/sandalwood.jpg",
+    image: "/stick1.jpeg",
     category: "Spiritual",
   },
   {
@@ -12,7 +12,7 @@ export const products = [
     description:
       "Fresh rose fragrance to brighten mornings and create a soothing atmosphere.",
     price: "110",
-    image: "/products/rose.jpg",
+    image: "/stick2.jpeg",
     category: "Floral",
   },
   {
@@ -20,7 +20,7 @@ export const products = [
     description:
       "Traditional temple incense with rich fragrance for spiritual spaces.",
     price: "150",
-    image: "/products/temple.jpg",
+    image: "/stick3.jpeg",
     category: "Spiritual",
   },
   {
@@ -28,7 +28,7 @@ export const products = [
     description:
       "Delicate floral fragrance that fills your home with gentle sweetness.",
     price: "130",
-    image: "/products/jasmine.jpg",
+    image: "/stick4.jpeg",
     category: "Floral",
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     description:
       "Aromatic lavender sticks that relax your mind and relieve stress.",
     price: "140",
-    image: "/products/lavender.jpg",
+    image: "/stick3.jpeg",
     category: "Relaxing",
   },
   {
@@ -44,7 +44,7 @@ export const products = [
     description:
       "Luxurious mogra fragrance — perfect for prayers, festivals, and calm evenings.",
     price: "160",
-    image: "/products/mogra.jpg",
+    image: "/stick1.jpeg",
     category: "Floral",
   },
 ];
