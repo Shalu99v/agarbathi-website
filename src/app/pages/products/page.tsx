@@ -71,7 +71,7 @@ export default function ProductsPage() {
         </div>
       ) : (
         <p className="text-center text-gray-600 mt-6">
-          No products found for "<span className="font-semibold">{search}</span>"
+          No products found for &quot;<span className="font-semibold">{search}</span>&quot;
         </p>
       )}
     </div>
