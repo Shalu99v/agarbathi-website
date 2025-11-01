@@ -38,7 +38,7 @@ export default function Hero() {
 
       {/*  Floating incense packet images (Left + Right layout) */}
       {/* Left-side single image */}
-      <div className="absolute top-30 bottom-10 left-10 z-20">
+      <div className="absolute top-30 bottom-10 left-10 z-20 hidden lg:block">
         <div className="w-40 h-40 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float1">
           <img
             src="/circle1.jpeg"
@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
 
       {/* Right-side two images */}
-      <div className="absolute bottom-35 right-35 flex flex-col gap-8 z-20">
+      <div className="absolute bottom-35 right-35  flex-col gap-8 z-20 hidden  lg:block">
         <div
           className={`w-32 h-32 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
              
@@ -62,7 +62,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="absolute top-[30%] bottom-10 right-10 flex flex-col gap-8 z-20">
+      <div className="absolute top-[30%] bottom-10 right-10 flex flex-col gap-8 z-20 hidden  lg:block">
         <div
           className={`w-32 h-32 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
              
