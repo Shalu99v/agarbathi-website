@@ -30,13 +30,13 @@ export default function Navbar() {
           : "bg-transparent text-white"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 ">
         {/* Logo / Brand */}
         <div
           className="text-2xl font-bold cursor-pointer"
           onClick={() => handleScrollTo("home")}
         >
-          <img src="" alt="Logo" />
+          <img src="/logo3.png" alt="Logo" className="w-[80px]" />
         </div>
 
         {/* Menu */}

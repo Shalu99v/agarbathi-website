@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <section
-      id="home"
+      id="hero"
       className="h-screen bg-cover bg-center relative flex flex-col justify-center items-center text-center text-white bannerBg"
       style={{ backgroundImage: "url('/agarbathi_banner.png')" }}
     >
