@@ -4,9 +4,9 @@ import { Leaf, Flame, Sparkles } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div id='about' className="min-h-screen bg-gradient-to-b from-[#FFF8E7] via-[#FDF3D0] to-[#FBE7A1] px-6 py-12 text-gray-800">
+    <div id="about" className="min-h-screen bg-gradient-to-b from-[#FFF8E7] via-[#FDF3D0] to-[#FBE7A1] px-6 py-12 text-gray-800">
       {/* Heading Section */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12" data-aos="fade-up">
         <h1 className="text-5xl font-bold mb-4 text-[#7B3F00] drop-shadow-sm">
           About Us
         </h1>
@@ -20,7 +20,10 @@ export default function AboutPage() {
       {/* Cards Section */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {/* Card 1 */}
-        <div className="bg-white/70 backdrop-blur-md border border-yellow-100 rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <div
+          className="bg-white/70 backdrop-blur-md border border-yellow-100 rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1"
+          data-aos="fade-up"
+        >
           <div className="flex justify-center mb-5">
             <Leaf className="w-14 h-14 text-green-600 animate-bounce" />
           </div>
@@ -34,7 +37,11 @@ export default function AboutPage() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white/70 backdrop-blur-md border border-yellow-100 rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <div
+          className="bg-white/70 backdrop-blur-md border border-yellow-100 rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           <div className="flex justify-center mb-5">
             <Flame className="w-14 h-14 text-orange-500 animate-pulse" />
           </div>
@@ -48,7 +55,11 @@ export default function AboutPage() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white/70 backdrop-blur-md border border-yellow-100 rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <div
+          className="bg-white/70 backdrop-blur-md border border-yellow-100 rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <div className="flex justify-center mb-5">
             <Sparkles className="w-14 h-14 text-yellow-500 animate-spin-slow" />
           </div>

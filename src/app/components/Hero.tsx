@@ -15,12 +15,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative z-10 px-6 text-center">
-        <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
+      <div className="relative z-10 px-6 text-center" data-aos="fade-up" data-aos-delay="100">
+        <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg" data-aos="fade-up" data-aos-delay="150">
           3D Agarbathis
         </h1>
 
-        <p className="text-lg max-w-2xl mx-auto mb-6 text-gray-100 drop-shadow-md">
+        <p className="text-lg max-w-2xl mx-auto mb-6 text-gray-100 drop-shadow-md" data-aos="fade-up" data-aos-delay="250">
           Handcrafted incense sticks with divine fragrances — bringing peace,
           positivity, and purity to your home.
         </p>
@@ -30,6 +30,8 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 bg-[#1a0404] font-semibold text-white px-8 py-3 rounded-full shadow-lg border border-black hover:bg-green-700 transition duration-300"
+          data-aos="zoom-in"
+          data-aos-delay="350"
         >
           <img src="/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
           Chat on WhatsApp
@@ -49,7 +51,7 @@ export default function Hero() {
       </div>
 
       {/* Right-side two images */}
-      <div className="absolute bottom-35 right-35  flex-col gap-8 z-20 hidden  lg:block">
+      <div className="absolute bottom-35 right-35 z-20 hidden lg:flex flex-col gap-8">
         <div
           className={`w-32 h-32 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
              
@@ -62,7 +64,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="absolute top-[30%] bottom-10 right-10 flex flex-col gap-8 z-20 hidden  lg:block">
+      <div className="absolute top-[30%] bottom-10 right-10 z-20 hidden lg:flex flex-col gap-8">
         <div
           className={`w-32 h-32 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
              

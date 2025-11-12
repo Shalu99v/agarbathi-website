@@ -21,14 +21,14 @@ export default function ContactPage() {
   };
 
   return (
-    <div id='contact' className="p-8 bg-gradient-to-b from-amber-50 to-orange-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center text-amber-800 mb-10 drop-shadow-sm">
+    <div id="contact" className="p-8 bg-gradient-to-b from-amber-50 to-orange-100 min-h-screen">
+      <h1 className="text-3xl font-bold text-center text-amber-800 mb-10 drop-shadow-sm" data-aos="fade-up">
         📞 Contact Us
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {/* 🕉️ Contact Info */}
-        <div className="bg-white p-6 rounded-2xl shadow-md">
+        <div className="bg-white p-6 rounded-2xl shadow-md" data-aos="fade-right">
           <h2 className="text-2xl font-semibold text-amber-800 mb-4">
             Get in Touch
           </h2>
@@ -64,6 +64,7 @@ export default function ContactPage() {
         <form
           onSubmit={handleSubmit}
           className="bg-white p-6 rounded-2xl shadow-md"
+          data-aos="fade-left"
         >
           <h2 className="text-2xl font-semibold text-amber-800 mb-4">
             Send a Message
