@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer className="relative text-amber-50  overflow-hidden">
+    <footer className="relative text-amber-50  overflow-hidden" data-aos="fade-up">
       {/* 🌿 Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-70"

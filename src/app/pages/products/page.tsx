@@ -26,13 +26,13 @@ export default function ProductsPage() {
   });
 
   return (
-    <div id='products' className="p-6 bg-gradient-to-b from-amber-50 to-orange-100 min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-center text-amber-800 drop-shadow-sm">
+    <div id="products" className="p-6 bg-gradient-to-b from-amber-50 to-orange-100 min-h-screen">
+      <h1 className="text-3xl font-bold mb-8 text-center text-amber-800 drop-shadow-sm" data-aos="fade-up">
         🪔 Our Products
       </h1>
 
       {/* 🔍 Search + Filter Bar */}
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10" data-aos="fade-up" data-aos-delay="100">
         {/* Search Bar */}
         <div className="relative w-full sm:w-1/3">
           <input
@@ -66,7 +66,9 @@ export default function ProductsPage() {
       {filteredProducts.length > 0 ? (
         <div className="mx-[5%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProducts.map((product, index) => (
-            <ProductCard key={index} product={product} />
+            <div key={product.name} data-aos="fade-up" data-aos-delay={index * 100}>
+              <ProductCard product={product} />
+            </div>
           ))}
         </div>
       ) : (
