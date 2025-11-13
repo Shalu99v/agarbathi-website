@@ -41,7 +41,7 @@ export default function ContactPage() {
               <FaPhoneAlt className="text-amber-700" /> +91 98765 43210
             </li>
             <li className="flex items-center gap-3">
-              <FaEnvelope className="text-amber-700" /> info@3dagarbathis.com
+              <FaEnvelope className="text-amber-700" /> info@threedagarbathis.com
             </li>
             <li className="flex items-center gap-3">
               <FaMapMarkerAlt className="text-amber-700" /> Chengannur, Alappuzha, Kerala

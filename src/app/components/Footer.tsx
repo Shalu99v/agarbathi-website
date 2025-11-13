@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="relative max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Logo / Name */}
         <div className="text-center md:text-left">
-          <h2 className="text-3xl font-bold drop-shadow-md">3D Agarbathis</h2>
+          <h2 className="text-3xl font-bold drop-shadow-md">ThreeD Agarbathis</h2>
           <p className="text-sm text-amber-200 mt-1">
             Spreading fragrance & peace since 1999 🌸
           </p>
@@ -55,7 +55,7 @@ export default function Footer() {
 
       {/* Bottom Line */}
       <div className="relative text-center text-white text-[10px] border-t border-[#391e06] py-2 backdrop-blur-sm">
-        © {new Date().getFullYear()} <span className="font-semibold">3D Agarbathis</span>. All rights reserved.
+        © {new Date().getFullYear()} <span className="font-semibold">ThreeD Agarbathis</span>. All rights reserved.
       </div>
     </footer>
   );
