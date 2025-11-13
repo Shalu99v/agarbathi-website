@@ -26,7 +26,7 @@ export default function ProductsPage() {
   });
 
   return (
-    <div id="products" className="p-6 bg-gradient-to-b from-amber-50 to-orange-100 min-h-screen">
+    <div id="products" className="p-6 bg-gradient-to-b from-amber-50 to-orange-100 ">
       <h1 className="text-3xl font-bold mb-8 text-center text-amber-800 drop-shadow-sm" data-aos="fade-up">
         🪔 Our Products
       </h1>
