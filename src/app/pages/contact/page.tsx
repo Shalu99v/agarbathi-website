@@ -21,7 +21,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div id="contact" className="p-8 bg-gradient-to-b from-amber-50 to-orange-100 min-h-screen">
+    <div id="contact" className="p-8 bg-gradient-to-b from-amber-50 to-orange-100 ">
       <h1 className="text-3xl font-bold text-center text-amber-800 mb-10 drop-shadow-sm" data-aos="fade-up">
         📞 Contact Us
       </h1>

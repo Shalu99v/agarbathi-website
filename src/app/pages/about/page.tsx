@@ -4,7 +4,7 @@ import { Leaf, Flame, Sparkles } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div id="about" className="min-h-screen bg-gradient-to-b from-[#FFF8E7] via-[#FDF3D0] to-[#FBE7A1] px-6 py-12 text-gray-800">
+    <div id="about" className="bg-gradient-to-b from-[#FFF8E7] via-[#FDF3D0] to-[#FBE7A1] px-6 py-12 text-gray-800">
       {/* Heading Section */}
       <div className="text-center mb-12" data-aos="fade-up">
         <h1 className="text-5xl font-bold mb-4 text-[#7B3F00] drop-shadow-sm">
