@@ -36,7 +36,7 @@ export default function Navbar() {
           className="text-2xl font-bold cursor-pointer"
           onClick={() => handleScrollTo("home")}
         >
-          <img src="/logo3.png" alt="Logo" className="w-[80px]" />
+          <img src="/logo.png" alt="Logo" className="w-[80px]" />
         </div>
 
         {/* Menu */}

@@ -1,4 +1,5 @@
 "use client";
+import { MessageCircle, ShoppingBag, Sparkles } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Hero() {
@@ -12,20 +13,46 @@ export default function Hero() {
       style={{ backgroundImage: "url('/agarbathi_banner.png')" }}
     >
       {/* Overlay (dim background) */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/80"></div>
 
       {/* Content */}
       <div className="relative z-10 px-6 text-center" data-aos="fade-up" data-aos-delay="100">
-        <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg" data-aos="fade-up" data-aos-delay="150">
-          3D Agarbathis
-        </h1>
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-[#ed8313] text-[#ed8313] animate-scale-in">
+            <Sparkles className="w-4 h-4" />
+            <span className="text-sm font-medium">Premium Handcrafted Collection</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+            Divine Fragrances for
+            <span className="block mt-2 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-amber-400">
+              Sacred Moments
+            </span>
+          </h1>
 
-        <p className="text-lg max-w-2xl mx-auto mb-6 text-gray-100 drop-shadow-md" data-aos="fade-up" data-aos-delay="250">
-          Handcrafted incense sticks with divine fragrances — bringing peace,
-          positivity, and purity to your home.
-        </p>
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Experience the ancient art of incense making with our premium 3D Agarbathis. 
+            Each stick is carefully crafted to bring tranquility, positive energy, and divine essence to your space.
+          </p>
 
-        <a
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            <button
+              className="bg-[#b3540f] items-center transition-all duration-300 hover:scale-105 inline-flex px-4 py-2 rounded-[25px] "
+              onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
+            >
+              <MessageCircle className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
+              Chat on WhatsApp
+            </button>
+          
+            <button
+              className=" inline-flex items-center px-4 py-2 rounded-[25px] border-2 border-[#b3540f] text-[#b3540f] hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-105"
+            >
+              <ShoppingBag className="w-5 h-5 mr-2" />
+              Browse Collection
+            </button>
+          </div>
+
+        {/* <a
           href={`https://wa.me/919876543210`} // replace with your actual number
           target="_blank"
           rel="noopener noreferrer"
@@ -35,13 +62,13 @@ export default function Hero() {
         >
           <img src="/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
           Chat on WhatsApp
-        </a>
+        </a> */}
       </div>
 
       {/*  Floating incense packet images (Left + Right layout) */}
       {/* Left-side single image */}
-      <div className="absolute top-30 bottom-10 left-10 z-20 hidden lg:block">
-        <div className="w-40 h-40 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float1">
+      <div className="absolute top-60 right-50 z-20 hidden lg:flex flex-col gap-8">
+        <div className="w-50 h-50 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float1">
           <img
             src="/circle1.jpeg"
             alt="Agarbathi packet 1"
@@ -51,9 +78,10 @@ export default function Hero() {
       </div>
 
       {/* Right-side two images */}
-      <div className="absolute bottom-35 right-35 z-20 hidden lg:flex flex-col gap-8">
+      <div className="absolute bottom-60 right-74 z-20 hidden lg:flex flex-col gap-8">
+
         <div
-          className={`w-32 h-32 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
+          className={`w-40 h-40 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
              
             `}
         >
@@ -64,7 +92,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="absolute top-[30%] bottom-10 right-10 z-20 hidden lg:flex flex-col gap-8">
+      <div className="absolute top-[47%] bottom-10 right-40 z-20 hidden lg:flex flex-col gap-8">
         <div
           className={`w-32 h-32 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
              
