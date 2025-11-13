@@ -30,7 +30,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Experience the ancient art of incense making with our premium 3D Agarbathis. 
+            Experience the ancient art of incense making with our premium ThreeD Agarbathis. 
             Each stick is carefully crafted to bring tranquility, positive energy, and divine essence to your space.
           </p>
 
