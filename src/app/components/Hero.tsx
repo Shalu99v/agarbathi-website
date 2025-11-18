@@ -66,45 +66,28 @@ export default function Hero() {
       </div>
 
       {/*  Floating incense packet images (Left + Right layout) */}
-      {/* Left-side single image */}
-      <div className="absolute top-60 right-50 z-20 hidden lg:flex flex-col gap-8">
-        <div className="w-50 h-50 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float1">
-          <img
-            src="/circle1.jpeg"
-            alt="Agarbathi packet 1"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
+    {/* Floating Images Wrapper */}
+<div className="absolute right-10 top-1/2 -translate-y-1/2 hidden lg:block">
+  <div className="relative w-[380px] h-[380px]">
 
-      {/* Right-side two images */}
-      <div className="absolute bottom-60 right-74 z-20 hidden lg:flex flex-col gap-8">
+    {/* Top circle */}
+    <div className="absolute top-0 right-2 w-36 h-36 rounded-full overflow-hidden border border-white shadow-xl animate-float1">
+      <img src="/circle1.jpeg" className="w-full h-full object-cover" />
+    </div>
 
-        <div
-          className={`w-40 h-40 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
-             
-            `}
-        >
-          <img
-            src="/circle3.png"
-            alt={`Agarbathi packet3`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-      <div className="absolute top-[47%] bottom-10 right-40 z-20 hidden lg:flex flex-col gap-8">
-        <div
-          className={`w-32 h-32 rounded-full overflow-hidden border-1 border-white shadow-lg animate-float3
-             
-            `}
-        >
-          <img
-            src="/circle2.jpeg"
-            alt={`Agarbathi packet2`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
+    {/* Bottom circle */}
+    <div className="absolute bottom-0 right-0 w-40 h-40 rounded-full overflow-hidden border border-white shadow-xl animate-float2">
+      <img src="/circle3.png" className="w-full h-full object-cover" />
+    </div>
+
+    {/* Middle circle */}
+    <div className="absolute top-[45%] left-16 w-32 h-32 rounded-full overflow-hidden border border-white shadow-xl animate-float3">
+      <img src="/circle2.jpeg" className="w-full h-full object-cover" />
+    </div>
+
+  </div>
+</div>
+
 
       {/* ✨ Floating Animations */}
       <style>{`
