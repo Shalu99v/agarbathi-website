@@ -65,7 +65,6 @@ export default function Hero() {
         </a> */}
       </div>
 
-      {/*  Floating incense packet images (Left + Right layout) */}
     {/* Floating Images Wrapper */}
 <div className="absolute right-10 top-1/2 -translate-y-1/2 hidden lg:block">
   <div className="relative w-[380px] h-[380px]">
